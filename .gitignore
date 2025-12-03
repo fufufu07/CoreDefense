@@ -1,0 +1,96 @@
+﻿########################
+# Unreal Engine 通用 #
+########################
+
+# Visual Studio / Rider / IDEA 等工程配置
+.vs/
+.idea/
+*.suo
+*.sdf
+*.sln.docstates
+*.opensdf
+*.VC.db
+*.VC.opendb
+
+# 编译产物
+Binaries/
+Build/*
+!Build/*.Target.cs
+!Build/*.Build.cs
+!Build/*.module
+DerivedDataCache/
+Intermediate/
+Saved/Logs/
+Saved/Backup/
+Saved/Autosaves/
+Saved/Collections/
+Saved/Config/CrashReports/
+Saved/Config/WindowsEditor/
+Saved/Config/LinuxEditor/
+
+# 平台特定中间文件
+*.iOS/
+*.Android/
+Saved/StagedBuilds/
+Saved/Cooked/
+Saved/Temp/
+Saved/Report/
+
+# Crash / Profiling
+*.dmp
+*.dump
+*.gpulog
+*.prof
+*.pid
+
+# 其他临时文件
+*.pdb
+*.obj
+*.pch
+*.idb
+*.ipdb
+*.iobj
+*.log
+*.tlog
+*.cache
+*.tmp
+*.user
+*.userprefs
+*.sublime-workspace
+*.sublime-project
+
+########################
+# Node / TypeScript   #
+########################
+
+# Node 模块和锁文件（如你要锁版本，可去掉 package-lock 的忽略）
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-lock.yaml
+
+# TS 编译产物（根据你项目实际输出目录调整）
+#TypeScript/**/*.js
+#TypeScript/**/*.js.map
+#TypeScript/**/*.d.ts
+
+# 若 Puerts/你的项目把 JS/TS 编译到 Content/ 或 Plugins/ 下，也可以按需忽略：
+# Content/**/*.js
+# Content/**/*.js.map
+
+########################
+# 编辑器/系统杂项     #
+########################
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+########################
+# 不小心放进来的东西  #
+########################
+
+# 引擎目录（防止你把整个引擎一起提交）
+Engine/
+UnrealEngine/
